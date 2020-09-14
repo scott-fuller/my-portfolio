@@ -108,10 +108,10 @@ footer { margin-top:auto;
          text-align: center;
          padding: 15px 0px;
          border:3px inset hsla(125, 100%, 13%, 0.2);
-         position:absolute;
+/*         position:absolute;
          bottom:0;
          width:100%;
-         background-color: hsla(125, 100%, 13%, 0.8);
+         background-color: hsla(125, 100%, 13%, 0.8);*/
          color:#fff;}
 footer a {color:#fff;)
 
