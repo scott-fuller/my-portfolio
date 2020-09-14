@@ -28,6 +28,7 @@ Header {color:#3E7216;
 }
    
 Nav {
+     text-align: right;
      width:100%;
      min-width:120px;
      font-weight:bold;
@@ -36,24 +37,29 @@ Nav {
      min-width:100px; }
   nav a: visited { color: #ffc654; }
   nav a:hover { color: #ffc654;}
+  nav ul {list-style-type: none; padding-left: 0;}
 
 
-  .nav-link a: link {color: #f28500; padding: 10px; }
+  .nav-link a: link {color: #f28500; padding: 105px; }
   .nav-link a: visited { color: #7A3F28; }
   .nav-link a: hover { color: #ea4f00;}
+  .nav-link ul {list-style-type: none; padding-left: 0;}
 
 
 
-@media (max-width: 768px) {
- main { position:relative!important;
-    }
-    nav{background-color:#3E7216!important;}
+@media (min-width: 434px) {
+  .navbar-collapse{
+       background-color: rgba(201, 76, 76, 0.3);
+  }
+    /*
+    .nav-item { width:fit-content!important; }
+  */
   
 }
 @media (min-width: 768px) {
-    
-  main { position:absolute; background-color:unset;}
-
+  .navbar-collapse{
+  background-color: unset;
+  }  
 }
 
 main { min-width:100%;
@@ -72,7 +78,7 @@ main { min-width:100%;
 p {color:#000; font-size-adjust: auto; }
 h1 {font-weight: bold;color:#FFF; font-size: 2.5em;}
 h2 {font-weight: bold;color:#f28500; font-size: 2em;}
-h3 {font-weight: bold;font-size: 1.5em;}
+h3 {font-weight: bold;font-size: 1.5em;color:#000; text-shadow: -1px -1px 0 #ffc654, 1px -1px 0 #ffc654, -1px 1px 0 #ffc654, 1px 1px 0 #ffc654;}
 h4 {font-size:1.4em;
     font-weight: bold;
     background-color:skyblue;}
@@ -102,30 +108,23 @@ dt {font-weight: bold;}
     border: 2px inset #000;}
 
 footer { margin-top:auto;
-         height:auto;
+         background-color:#004406;
+         color:#fff;
+         height:auto; 
          font-size:small;
          font-style:italic;
          text-align: center;
          padding: 15px 0px;
          border:3px inset hsla(125, 100%, 13%, 0.2);
-/*         position:absolute;
-         bottom:0;
-         width:100%;
-         background-color: hsla(125, 100%, 13%, 0.8);*/
-         color:#fff;}
-footer a {color:#fff;)
-
-
+         flex-direction: row;
+         } 
 
 .wrapper { padding: 1em 2em 0em 2em;
            float:center;
            width:90%;
            margin:auto;
-           margin-right: auto;   
-           margin-left: auto;
            display:block;
-           float:center;
-           text-align: center;}
+           text-align: center; height:auto; }
 
 #wrapper1 { margin-right: auto;   
            margin-left: auto;
@@ -179,3 +178,5 @@ image {text-align:center;
     min-height:240px; 
     max-height:800px;
     position: relative; }
+
+li { padding:5px;}
