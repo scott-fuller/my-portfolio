@@ -107,8 +107,15 @@ footer { margin-top:auto;
          font-style:italic;
          text-align: center;
          padding: 15px 0px;
-         border:3px inset hsla(125, 100%, 13%, 0.2)
-         }
+         border:3px inset hsla(125, 100%, 13%, 0.2);
+         position:absolute;
+         bottom:0;
+         width:100%;
+         background-color: hsla(125, 100%, 13%, 0.8);
+         color:#fff;}
+footer a {color:#fff;)
+
+
 
 .wrapper { padding: 1em 2em 0em 2em;
            float:center;
