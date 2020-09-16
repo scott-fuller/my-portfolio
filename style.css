@@ -14,7 +14,7 @@ body { max-width: 100%;
        font-size:100%;
        min-height:100vh;
        min-width: 300px;
-       float:center;
+       
        margin:auto;
        }
 
@@ -22,9 +22,8 @@ Header {color:#3E7216;
         text-align:center;
         width:100%;}
 
-Nav {
+Nav {position:absolute;
      text-align: right;
-     width:100%;
      min-width:120px;
      font-weight:bold;
      }
@@ -40,21 +39,27 @@ Nav {
   .nav-link a: hover { color: #ea4f00;}
   .nav-link ul {list-style-type: none; padding-left: 0;}
 
+.heroimg {margin-top:-5rem!important;}
 
+@media (max-width:434px) { .navbar {background-color: hsla(125, 100%, 13%, 0.6)!important;
+  }
+    .nav-item { width:fit-content!important; height:3rem;}
+  .card-title { font-size:1.0em!important; font-weight: 600; }
+    .heroimg {margin-top: 0rem!important;position:relative!important;}}
 
 @media (min-width: 434px) {
-  .navbar-collapse{
-       background-color: rgba(201, 76, 76, 0.3);
+    .navbar {background-color: hsla(125, 100%, 13%, 0.6)!important;
   }
-    .nav-item { width:fit-content!important; }
+    .nav-item { width:fit-content!important; height:3rem;}
   .card-title { font-size:1.5em!important; }
-  
+    .heroimg {margin-top: 0rem!important;position:relative!important;}
 }
 @media (min-width: 768px) {
   .navbar-collapse{
   background-color: unset;
+    }.navbar {background-color:unset!important;
   }  
-   .card-title { font-size:2.5em!important; } 
+   .card-title { font-size:2.5em!important; }    .heroimg {margin-top: -5rem!important;position:relative!important;}
     
 }
 
@@ -71,17 +76,17 @@ main { min-width:100%;
 
 .clear {clear:both;}
 
-p {color:#000; font-size-adjust: auto; }
-h1 {font-weight: bold;color:#FFF; font-size: 2.5em;}
-h2 {font-weight: bold;color: #004406; font-size: 2em;}
-h3 {font-weight: bold;font-size: 1.5em;color:#000; text-shadow: -1px -1px 0 #ffc654, 1px -1px 0 #ffc654, -1px 1px 0 #ffc654, 1px 1px 0 #ffc654;}
+p {color:#000; font-size-adjust: auto; font-family: 'Inter', sans-serif; }
+h1 {color:#FFF; font-family:'Comfortaa", cursive, Arial' }
+h2 {font-weight: bold;color: #004406; font-size: 2em;font-family:'Comfortaa", cursive, Arial'}
+h3 {font-weight: bold;font-size: 1.5em;color:#000; text-shadow: -1px -1px 0 #ffc654, 1px -1px 0 #ffc654, -1px 1px 0 #ffc654, 1px 1px 0 #ffc654;font-family:'Comfortaa", cursive, Arial'}
 h4 {font-size:1.4em;
     font-weight: bold;
     background-color:skyblue;}
 
 ul { 
        max-width: 95%;
-    font-family:sans-serif;
+    font-family:'Comfortaa", cursive, Arial'
        font-size:100%
        }
 
@@ -118,7 +123,7 @@ footer a { color:#ffc654; font-weight: 700}
 
 .wrapper { padding: 1em 2em 0em 2em;
            float:center;
-           max-width:80%;
+           max-width:90%;
            margin:auto;
            display:block;
            
@@ -174,4 +179,6 @@ image {text-align:center;
     position: relative; }
 
 li { padding:5px;}
+
+.textgrid {  padding:.5em!important; }
 
