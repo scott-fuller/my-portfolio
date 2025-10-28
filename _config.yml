@@ -1,9 +1,11 @@
 title: John Doe # your name (or website title) here
 logo: "/images/logo.png?raw=true" # your photo (or logo) here
+url: "https://fullerdesignsites.com"
+baseurl: ""
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  First description 
+  Portfolio site for Scott Fuller.
   <br><br>
-  Second description 
+  That's pretty much it.
   <br><br>
   <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
   
